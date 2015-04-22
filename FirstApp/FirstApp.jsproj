@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone 8">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone 8">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone 8">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>76f14058-adcc-4ff5-9574-3930df5385a8</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows\scripts\platformOverrides.js" />
+    <Content Include="merges\windows\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\.fetch.json" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\server\pushADM.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\server\pushAPNS.rb" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\server\pushGCM.rb" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\beep.wav" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\index.html" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\jquery_1.5.2.min.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\Example\www\PushNotification.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\MIT-LICENSE" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\plugin.xml" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\README.md" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\genericpush.tests.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\HtmlReporter.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\HtmlReporterHelpers.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\ReporterView.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\SpecView.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\SuiteView.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\html\TrivialReporter.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\index.html" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\jasmine.css" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\jasmine.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\spec\test-runner.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\amazon\ADMHandlerActivity.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\amazon\ADMMessageHandler.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\amazon\PushPlugin.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\android-support-v13.jar" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\CordovaGCMBroadcastReceiver.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\GCMIntentService.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\PushHandlerActivity.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\com\plugin\gcm\PushPlugin.java" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\android\libs\gcm.jar" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\AppDelegate+notification.h" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\AppDelegate+notification.m" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\PushPlugin.h" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\ios\PushPlugin.m" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\windows8\PushPluginProxy.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\wp8\Newtonsoft.Json.dll" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\src\wp8\PushPlugin.cs" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\www\blackberry10\PushPluginProxy.js" />
+    <Content Include="plugins\com.phonegap.plugins.PushPlugin\www\PushNotification.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\.fetch.json" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\CHANGELOG.md" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\libs\android\android-support-v4.jar" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\LICENSE" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\plugin.xml" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\README.md" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\scripts\ios\didRegisterUserNotificationSettings.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\scripts\windows\broadcastActivateEvent.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\scripts\windows\setToastCapable.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\ClearReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\ClickActivity.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\LocalNotification.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\AbstractClearReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\AbstractClickActivity.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\AbstractRestoreReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\AbstractTriggerReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\AssetUtil.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\Builder.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\ClearReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\ClickActivity.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\Manager.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\Notification.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\Options.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\notification\TriggerReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\RestoreReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\android\TriggerReceiver.java" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\APPLocalNotification.h" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\APPLocalNotification.m" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\APPLocalNotificationOptions.h" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\APPLocalNotificationOptions.m" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\UIApplication+APPLocalNotification.h" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\UIApplication+APPLocalNotification.m" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\UILocalNotification+APPLocalNotification.h" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\ios\UILocalNotification+APPLocalNotification.m" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\windows\LocalNotificationCore.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\windows\LocalNotificationProxy.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\src\windows\LocalNotificationUtil.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\www\local-notification-core.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\www\local-notification-util.js" />
+    <Content Include="plugins\de.appplant.cordova.plugin.local-notification\www\local-notification.js" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\jquery-2.0.3.min.js" />
+    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="css\index.css" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows\logo.png" />
+    <Content Include="res\icons\windows\smalllogo.png" />
+    <Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
+    <Content Include="res\icons\windows\storelogo.png" />
+    <Content Include="res\icons\windows\StoreLogo.scale-240.png" />
+    <Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\native\android\ant.properties" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows\splashscreen.png" />
+    <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Tools for Apache Cordova</ProjectUISubcaption>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetPlatformIdentifier>MDD</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>
