@@ -20,23 +20,20 @@
                 basemap: "streets"
             });
         });
-            
+     
          // Declare a proxy to reference the hub.
-        var chat = $.connection.BroadCastHub22;
+      
         $.connection.hub.qs = "id=" + 1;
          // Create a function that the hub can call to broadcast messages.
-        chat.client.Hi = function () {
-            // Html encode display name and message.
-            alert("Hi");
-        };
+       
 
 
 
-        $.connection.hub.start().done(function () {
+      
             $('#notify').click(function () {
                 chat.server.hello();
             });
-        });
+      
 
         
     };
@@ -52,22 +49,28 @@
 
 
 var x = 0;
+$.connection.hub.url = 'http://demos.esrinea.com/signalr/signalr';
+var chat = $.connection.BroadCastHub22;
+ chat.client.Hi = function () {
+            // Html encode display name and message.
+     cordova.plugins.notification.local.schedule({
+         id: x,
+         title: "samo 3aleko" + x,
+         text: "notification ahe!",
+
+         data: { meetingId: "done ;)" }
+     });
+     x++;
+     cordova.plugins.notification.local.on("click", function (notification) {
+         alert('in f');
+         joinMeeting(notification.data.meetingId);
+     });
+        };
 $.connection.hub.start().done(function () {
-    $('#notify').click(function () {
-        alert('in fn');
-
-        cordova.plugins.notification.local.schedule({
-            id: x,
-            title: "samo 3aleko" + x,
-            text: "notification ahe!",
-
-            data: { meetingId: "done ;)" }
-        });
-        x++;
-        cordova.plugins.notification.local.on("click", function (notification) {
-            alert('in f');
-            joinMeeting(notification.data.meetingId);
-        });
+    $('#notify').click(function (e) {
+        chat.server.hello();
+        e.stopImmediatePropagation();
+        e.stopPropagation();
     });
     function joinMeeting(text) {
         alert(text)
